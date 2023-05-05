@@ -27,6 +27,8 @@
     "express-async-handler": "^1.2.0",
     "mongoose": "^7.1.0",
     "nodemon": "^2.0.22",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "uuidv4": "^6.2.13",
+    "validatorjs": "^3.22.1"
   }
 }
