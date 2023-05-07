@@ -6,16 +6,17 @@ const router = express.Router();
 //Importing the product controller 
 const { create, update, get, show, deleteProduct} =  require("../controller/product.controller");
 
-
 //Importing the product validation function from validation.middleware
 const { productSchema } = require("../middleware/validation.middleware");
 
 
-// Route for creating a product
-router.post("/create", productSchema, create);
+// //Importing the upload function from out multer config file 
+const upload = require("../config/multer")
+
+router.post("/create", upload.array('files', 10), productSchema, create)
 
 //Route to update a specfic product
-router.put("/update/:id", productSchema, update);
+router.put("/update/:id", upload.array('files', 10), productSchema, update);
 
 //route to get all products
 router.get("/get", get);
