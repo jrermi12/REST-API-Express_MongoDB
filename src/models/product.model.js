@@ -15,6 +15,10 @@ const productSchema = mongoose.Schema({
     price:{
         type:Number, 
     },
+
+    files:{
+        type: Array        
+    }
  });
 
 //exporting the product schema as monngose collection
