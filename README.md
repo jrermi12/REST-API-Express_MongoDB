@@ -9,6 +9,8 @@ I am starting a series on building REST API with Express js and Mongo DB startin
 
 - Part Four - Branch Epsiode-4
 
+### main branch is always up to date with the latest lesson
+
 #### Topics
 
  - Setting up Express and MongoDB 
