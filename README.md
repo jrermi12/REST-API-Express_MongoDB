@@ -1,6 +1,6 @@
 ### Hey guys
 
-I am starting a series on building REST API with Express js and Mongo DB starting from a crud operation, and multiple image uploads (Cloudinary) to deploying the express server to the digital ocean VPS Ubuntu server. and this is the repository where the source code from the lesson lay. every lesson is branched-out from each respectively meaning, Epsiode-4 have everything that Episode-3 have. 
+I am starting a series on building REST API with Express js and Mongo DB on Medium starting from a crud operation, and multiple image uploads (Cloudinary) to deploying the express server to the digital ocean VPS Ubuntu server. and this is the repository where the source code from the lesson lay. every lesson is branched-out from each respectively meaning, Epsiode-4 have everything that Episode-3 have. 
 - Part One - Branch Epsiode-1
 
 - Part Two - Branch Epsiode-2
@@ -10,7 +10,7 @@ I am starting a series on building REST API with Express js and Mongo DB startin
 - Part Four - Branch Epsiode-4
 
 ### main branch is always up to date with the latest lesson
-
+### link to the lessons https://medium.com/@it.ermias.asmare/express-with-mongodb-rest-api-fe892633e540
 #### Topics
 
  - Setting up Express and MongoDB 
