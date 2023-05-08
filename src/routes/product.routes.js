@@ -9,14 +9,16 @@ const { create, update, get, show, deleteProduct} =  require("../controller/prod
 //Importing the product validation function from validation.middleware
 const { productSchema } = require("../middleware/validation.middleware");
 
+//Importing the JWT verifyer from auth middleware 
+const verifyToken = require("../middleware/auth.middleware")
 
 // //Importing the upload function from out multer config file 
 const upload = require("../config/multer")
 
-router.post("/create", upload.array('files', 10), productSchema, create)
+router.post("/create", verifyToken, upload.array('files', 10), productSchema, create)
 
 //Route to update a specfic product
-router.put("/update/:id", upload.array('files', 10), productSchema, update);
+router.put("/update/:id", verifyToken, upload.array('files', 10), productSchema, update);
 
 //route to get all products
 router.get("/get", get);
@@ -25,7 +27,7 @@ router.get("/get", get);
 router.get("/show/:id", show);
 
 //route to delete a specfic product
-router.delete("/delete/:id", deleteProduct); 
+router.delete("/delete/:id", verifyToken,  deleteProduct); 
 
 //Exporting the routes 
 module.exports = router;
