@@ -18,16 +18,16 @@ const upload = require("../config/multer")
 router.post("/create", verifyToken, upload.array('files', 10), productSchema, create)
 
 //Route to update a specfic product
-router.put("/update/:id", verifyToken, upload.array('files', 10), productSchema, update);
+router.put("/update/:id", verifyToken,  upload.array('files', 10), productSchema, update);
 
 //route to get all products
-router.get("/get", get);
+router.get("/get",  get);
 
 //route to get or show only a specfic product
 router.get("/show/:id", show);
 
 //route to delete a specfic product
-router.delete("/delete/:id", verifyToken,  deleteProduct); 
+router.delete("/delete/:id", verifyToken, deleteProduct); 
 
 //Exporting the routes 
 module.exports = router;
